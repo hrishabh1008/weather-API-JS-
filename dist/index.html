@@ -10,6 +10,65 @@
   <div id="app" class="container mx-auto p-4">
     <!-- Content goes here -->
   </div>
+
+  <div id="app" class="container mx-auto p-4">
+    <h1 class="text-3xl font-bold text-center mb-6">Weather Forecast App</h1>
+  
+    <!-- Search Bar -->
+    <div class="flex justify-center mb-6">
+      <input 
+        id="cityInput" 
+        type="text" 
+        placeholder="Enter city name" 
+        class="w-1/2 p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+      />
+      <button 
+        id="searchBtn" 
+        class="ml-2 px-4 py-2 bg-blue-500 text-white font-bold rounded-lg hover:bg-blue-600">
+        Search
+      </button>
+    </div>
+  
+    <!-- Weather Display Card -->
+    <div id="weatherCard" class="hidden bg-white p-4 rounded-lg shadow-lg">
+      <h2 id="cityName" class="text-2xl font-bold mb-2"></h2>
+      <p id="weatherDescription" class="text-gray-600 mb-4"></p>
+      <div class="flex justify-between">
+        <p id="temperature" class="text-xl font-bold"></p>
+        <p id="humidity" class="text-xl"></p>
+        <p id="windSpeed" class="text-xl"></p>
+      </div>
+    </div>
+  </div>
+
+
+
+<!-- Extended Forecast Section -->
+<div id="forecastSection" class="hidden mt-6">
+  <h2 class="text-xl font-bold mb-4">5-Day Forecast</h2>
+  <div id="forecastCards" class="grid grid-cols-1 md:grid-cols-3 gap-4"></div>
+</div>
+
+
+
+
+
+
+<!-- Current Location Button -->
+<div class="flex justify-center mt-4">
+  <button 
+    id="locationBtn" 
+    class="px-4 py-2 bg-green-500 text-white font-bold rounded-lg hover:bg-green-600">
+    Use Current Location
+  </button>
+</div>
+
+
+
+
+
+  
+
   <script src="script.js"></script>
 </body>
 </html>
